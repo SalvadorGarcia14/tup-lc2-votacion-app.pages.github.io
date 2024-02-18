@@ -1,0 +1,281 @@
+body {
+    display: table;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Asegura que el contenedor principal ocupe toda la altura de la pantalla */
+    margin: 0;
+    /* Elimina el margen predeterminado del cuerpo */
+}
+
+/*Boton de paso y general*/
+.boton-general,
+.boton-paso,
+.consultar {
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Boton de paso y general-colores*/
+.boton-paso {
+    background-color: var(--magenta);
+}
+
+.boton-general {
+    background-color: var(--celeste);
+}
+
+/*¨Boton-informes redondito*/
+.boton-informes {
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    /* Hace que el borde redondeado funcione*/
+}
+
+/*Boton de paso y general: hover*/
+.boton-paso:hover,
+.boton-general:hover,
+.boton-informes:hover {
+    background-color: var(--gris-claro)
+}
+
+nav ul li .boton-paso,
+.boton-general,
+.consultar,
+.boton-informes {
+    font-size: 14px;
+}
+
+/* Estilos para la sección de Inicio */
+.boton-inicio {
+    margin-left: 1370px;
+}
+
+.Inicio-menunegro,
+.boton-inicio {
+    border: var(--gris-claro);
+    border-radius: 15px;
+    padding: 10px;
+    font-family: #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos);
+    text-decoration: none;
+    /* Asegura que el enlace no tenga subrayado */
+    display: inline-block;
+    /* Permite ajustar el tamaño del botón al contenido */
+}
+
+.Inicio-menunegro:hover {
+    color: var(--textos-hover);
+}
+
+/*Seccion mensajes*/
+#sec-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje-de-exito,
+.mensaje-de-error,
+.mensaje-de-exclamacion {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#mensaje-de-exito-informes,
+#mensaje-de-error-informes,
+#mensaje-de-exclamacion-informes {
+
+    display: none;
+}
+
+/*Color de los mensajes*/
+.mensaje-de-error {
+    background-color: var(--mensaje-usuario-rojo);
+}
+
+.mensaje-de-exito {
+    background-color: var(--mensaje-usuario-verde);
+}
+
+.mensaje-de-exclamacion {
+    background-color: var(--mensaje-usuario-amarillo);
+}
+
+/*Contenido Titulo*/
+#Texto-titulo {
+    margin-left: 70px;
+}
+
+#sec-contenido {
+    display: none;
+}
+
+/*Contenido tabla*/
+#Tabla-informes {
+    margin-left: 200px;
+    width: 1324px;
+    margin: 0 auto 50px auto;
+    border-radius: 15px;
+    border: 1px solid var(--borde-Grilla);
+    background-color: rgb(250, 250, 250);
+}
+
+/*Cabecera tabla*/
+th {
+    text-align: center;
+    /* Posición del texto: centrado */
+    color: var(--titulo-Grilla);
+    /* Color: --titulo-Grilla */
+    padding: 10px 20px;
+    /* Padding: 10px arriba/abajo, 20px izquierda/derecha */
+    font-size: 14px;
+    /* Tamaño de fuente: 14px */
+    font-weight: bold;
+    /* Grosor del texto: bold */
+    text-transform: uppercase;
+    /* Text-Transform: mayúsculas */
+    border-bottom: 1px solid var(--borde-inferior-Grilla);
+    /* Borde inferior: 1px sólido --borde-inferior-Grilla */
+}
+
+/* Estilo para TR cuando se hace hover */
+tr:hover {
+    background-color: rgb(250, 250, 250);
+    /* Color de fondo: rgb(250, 250, 250) */
+}
+
+/* Estilo para TD dentro de TR */
+td {
+    background-color: rgb(255, 255, 255);
+    /* Color de fondo: rgb(255, 255, 255) */
+    border-bottom: 1px solid var(--borde-inferior-Grilla);
+    /* Borde inferior: 1px sólido --borde-inferior-Grilla */
+    padding: 15px 0;
+    /* Padding: 15px arriba/abajo, 0 a la izquierda/derecha */
+    font-size: 12px;
+    /* Tamaño de fuente: 12px */
+    vertical-align: top;
+    /* Posición vertical: arriba (top) */
+    text-align: center;
+    /* Posición horizontal: centrado (center) */
+
+
+}
+
+td svg {
+    max-width: 100%;
+    align-items: left;
+}
+
+/*Texto azul*/
+.texto-elecciones-chico {
+    font-size: 12px;
+    color: var(--textos);
+    font-weight: bold;
+}
+
+.texto-path-chico {
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--celeste);
+}
+
+#mesas-electores-participacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para Mesas Escrutadas */
+#Mesas-escrutadas,
+#Electores,
+#Participación-sobre-escrutado {
+    border-radius: 5px;
+    margin: 10px;
+    height: 120px;
+    width: 150px;
+    font-size: 10px;
+    color: #FFF;
+}
+
+/*Estilos del svg*/
+#Mesas-escrutadas svg,
+#Electores svg,
+#Participacion-sobre-escrutado svg {
+    font-size: 70px;
+    height: 70px;
+    width: 70px;
+}
+
+/*Estilos de mesas escrutadas*/
+#Mesas-escrutadas {
+    background-color: var(--celeste);
+}
+
+/* Estilos para Electores */
+#Electores {
+    background-color: var(--magenta);
+}
+
+/* Estilos para Participación sobre Escrutado */
+#Participación-sobre-escrutado {
+    background-color: var(--morado);
+}
+
+/*Datos por agrupacion*/
+#datos-agrupacion {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    overflow-y: scroll;
+    height: 325px;
+    padding: 5px;
+    font-size: 10px;
+    color: var(--textos);
+}
+
+#recuadro-4 {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    /* Grilla: 100px 100px */
+    grid-gap: 5px;
+    /* Padding: 5px */
+    max-height: 325px;
+    /* Alto: 325px */
+}
+
+ul {
+    padding: 5px;
+    /* Padding: 5px */
+    font-size: 10px;
+    /* Tamaño de fuente: 10px */
+    color: var(--textos);
+    /* Color de texto: var(--textos) */
+}

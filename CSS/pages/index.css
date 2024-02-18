@@ -1,0 +1,139 @@
+/*Boton de paso y general*/
+.boton-general,
+.boton-paso,
+.boton-informes,
+.consultar {
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Boton de paso y general-colores*/
+.boton-paso {
+    background-color: var(--magenta);
+}
+
+.boton-general {
+    background-color: var(--celeste);
+}
+
+/*¨Boton-informes redondito*/
+.boton-informes {
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    /* Hace que el borde redondeado funcione*/
+}
+
+/*Boton de paso y general: hover*/
+.boton-paso:hover,
+.boton-general:hover,
+.boton-informes:hover {
+    background-color: var(--gris-claro)
+}
+
+nav ul li .boton-paso,
+.boton-general,
+.consultar,
+.boton-informes {
+    font-size: 14px;
+}
+
+/* Contenedor principal del titulo, imagen y texto */
+#sec-titulo {
+    display: flex;
+    /* Alinea el texto a la izquierda */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    justify-content: space-around;
+    /* Distribuye los elementos a lo largo del contenedor */
+    margin: 15px;
+    width: 80%;
+}
+
+/*Centra y acomoda el texto*/
+.textos {
+    margin-left: 110px;
+    margin-right: 2px;
+    min-width: 250px;
+    max-width: 700px;
+    margin-bottom: 200px;
+}
+
+/* Estilos para la imagen */
+#sec-titulo img {
+    text-align: center;
+    margin-right: 30px;
+    width: 400px;
+    margin-left: 20px;
+}
+
+#titulo-elecciones {
+    margin-left: 180px;
+    width: 80%;
+}
+
+/* Contenedor para los botones */
+#sec-contenido {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a ambos extremos */
+    
+}
+
+#sec-contenido{
+    display: flex;
+    flex-direction: row; /* Cambiado de column a row/horiontal */
+    align-items: center;
+    justify-content: center;
+}
+
+/*botones grandes de parte de abajo*/
+.boton-paso-abajo, .boton-general-abajo {
+    border-radius: 10px;
+    margin: 15px 55px 100px 55px;
+    width: 350px;
+    height: 100px;
+    padding: 1rem;
+    font-size: 28px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: start;
+    cursor: pointer;
+
+}
+
+.boton-paso-abajo{
+    background-color: var(--magenta);
+}
+
+.boton-general-abajo {
+    background-color: var(--celeste);
+}
+
+.boton-paso-abajo:hover, .boton-general-abajo:hover{
+    background-color: var(--gris-claro);
+}
+
+.boton-paso-abajo svg, .boton-general-abajo svg {
+    display: flex;
+    flex-direction: row; /* Cambiado de column a row */
+    align-items: center;
+    justify-content: center;
+}

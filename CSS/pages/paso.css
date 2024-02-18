@@ -1,0 +1,622 @@
+/* Estilos generales */
+.filtro {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    font-family: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos);
+    background-image: url('/tup-lc2-votacion-app/img/imagen-lupá.png');
+}
+
+/* Estilos para la sección de Inicio */
+#menu li a.active {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos);
+
+}
+
+#menu li a.active:hover {
+    color: var(--textos-hover);
+}
+
+/* Estilos para los desplegables-Select (Combos) */
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+
+}
+
+/* Estilos generales */
+.boton-filtrar {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    font-family: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos);
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente los elementos dentro del botón */
+}
+
+.boton-filtrar img {
+    width: 20px;
+    margin-right: 5px;
+    background-color: black;
+    border-radius: 90%;
+}
+
+/*Boton general y informes del menu negro*/
+.General-menunegro,
+.Informes-menunegro {
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.General-menunegro {
+    background-color: var(--celeste);
+}
+
+/*¨Boton-informes redondito*/
+.Informes-menunegro {
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid white;
+    /* Hace que el borde redondeado funcione*/
+
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hace que el borde redondeado funcione*/
+}
+
+/* Estilos para la sección de Inicio */
+.boton-inicio {
+    border: var(--gris-claro);
+    border-radius: 15px;
+    padding: 10px;
+    font-family: #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos);
+    text-decoration: none;
+    /* Asegura que el enlace no tenga subrayado */
+    display: inline-block;
+    /* Permite ajustar el tamaño del botón al contenido */
+    margin-left: auto;
+    /* Ajustado a "auto" para centrar */
+    margin-right: 100px;
+    /* Margen derecho para dar espacio al menú */
+}
+
+.Inicio-menunegro:hover {
+    color: var(--textos-hover);
+}
+
+/*Seccion mensajes*/
+#sec-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje-de-exito-verde,
+.mensaje-de-error-rojo,
+.mensaje-de-exclamacion-amarillo {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+/*Color de los mensajes*/
+.mensaje-de-error-rojo {
+    background-color: var(--mensaje-usuario-rojo);
+}
+
+.mensaje-de-exito-verde {
+    background-color: var(--mensaje-usuario-verde);
+}
+
+.mensaje-de-exclamacion-amarillo {
+    background-color: var(--mensaje-usuario-amarillo);
+}
+
+#mensaje-completado,
+#mensaje-error,
+#mensaje-exclamacion {
+    display: none;
+}
+
+#mensaje-error-informes,
+#mensaje-completado-informes {
+    display: none;
+
+}
+
+.Rellenar-campos {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    background-color: var(--mensaje-usuario-amarillo);
+}
+
+#mensaje-de-Rellenar-campos {
+    display: none;
+}
+
+/*Seccion titulo*/
+#sec-titulo {
+    margin-left: 150px;
+}
+
+#sec-titulo p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--celeste);
+}
+
+#ID-subtitulo-eleccion {
+    display: none;
+}
+
+/*Seccion contenido - sec-contenido*/
+#sec-contenido {
+    display: none;
+}
+
+#Recuadros-resumen-información {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 50px;
+}
+
+
+
+/*Boton- +agregar informes*/
+#boton-agregar-informes button
+#boton-agregar-informe-button {
+    background-color: var(--gris-claro);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 870px;
+    /*Lo mueve hacia la izquierda de la izquieda*/
+}
+
+#boton-agregar-informes button:hover {
+    color: var(--textos);
+}
+
+/* Estilos para el recuadro de "Mesas Escrutadas", "#Electores", "#Participacion-escrutado"*/
+#Mesas-escrutadas,
+#Electores,
+#Participacion-escrutado {
+    border-radius: 10px;
+    margin: 15px;
+    width: 184px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
+
+/* Colores de "Mesas Escrutadas", "#Electores", "#Participacion-escrutado"*/
+#Mesas-escrutadas {
+    background-color: var(--celeste);
+}
+
+#Electores {
+    background-color: var(--magenta)
+}
+
+#Participacion-escrutado {
+    background-color: var(--morado);
+}
+
+/* Estilos para el icono SVG en los recuadros */
+.v-icon__component {
+    width: 50px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 50px;
+    /* Ajusta el tamaño según tus necesidades */
+}
+
+/* Estilos para el párrafo dentro de los recuadros */
+#Mesas-escrutadas p,
+#Electores p,
+#Participacion-escrutado p {
+    margin: 0;
+}
+
+/* Alinea el párrafo verticalmente en el centro */
+#Mesas-escrutadas,
+#Electores,
+#Participacion-escrutado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+/* */
+
+
+
+.recuadros-container {
+    /*esta clase hace que cada uno de los hijos sea grid*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.recuadro {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px var(--borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+}
+
+.titulo-recuadro {
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 14px;
+}
+
+.recuadro h3 {
+    text-align: left;
+}
+
+.recuadro p {
+    text-align: right;
+    color: black;
+    font-size: 10px;
+}
+
+.contenido-recuadro {
+    padding: 10px;
+}
+
+.recuadro .contenido-recuadro {
+    max-height: 325px;
+    overflow-y: auto;
+
+}
+
+.contenido-recuadro svg {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 130px;
+}
+
+
+.cuadrado {
+    /*rectangulos de mesas escrutadas, electores y participacion sobre escrutados*/
+    border-radius: 10px;
+    margin: 15px;
+    width: 184px;
+    height: 70px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-size: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.cuadrado p {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.chart-wrap {
+    --chart-width: 260px;
+    --grid-color: #aaa;
+    --bar-thickness: 25px;
+    --bar-rounded: 3px;
+    --bar-spacing: 10px;
+    font-family: sans-serif;
+    width: var(--chart-width);
+}
+
+.chart-wrap .title {
+    font-weight: bold;
+    padding: 1.8em 0 2.8em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.chart-wrap.horizontal .grid {
+    transform: rotate(-90deg);
+}
+
+.chart-wrap .grid {
+    margin-left: 50px;
+    position: relative;
+    padding: 5px 0 5px 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--grid-color);
+    font-size: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Para que los elementos se apilen desde la parte inferior */
+}
+
+.chart-wrap .grid::before,
+.chart-wrap .grid::after {
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    top: -1.5em;
+}
+
+.chart-wrap .grid::before {
+    content: '0%';
+    left: -0.5em;
+}
+
+.chart-wrap .grid::after {
+    content: '100%';
+    right: -1.5em;
+}
+
+.chart-wrap.horizontal .grid::before,
+.chart-wrap.horizontal .grid::after {
+    transform: rotate(90deg);
+}
+
+.chart-wrap .bar {
+    width: var(--bar-value);
+    height: var(--bar-thickness);
+    margin: var(--bar-spacing) 0;
+    background-color: var(--bar-color);
+    border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+    transition: width 0.5s ease;
+    /* Transición suave para el cambio de ancho */
+}
+
+.chart-wrap .bar:hover {
+    opacity: 0.7;
+}
+
+.chart-wrap .bar::after {
+    content: attr(data-name);
+    margin-left: 100%;
+    padding: 10px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.chart-wrap .bar.partido1 {
+    background-color: var(--grafica-amarillo);
+}
+
+.chart-wrap .bar.partido2 {
+    background-color: var(--grafica-lila2);
+}
+
+.chart-wrap .bar.partido3 {
+    background-color: var(--grafica-celeste);}
+
+
+.chart-wrap .bar.partido4 {
+    background-color: var(--grafica-lila);
+}
+
+.chart-wrap .bar.partido5 {
+    background-color: var(--grafica-bordo);
+}
+
+.chart-wrap .bar.partido5 {
+    background-color: var(--grafica-verde);
+}
+
+.chart-wrap .bar.partido7,
+.chart-wrap .bar.partido8 {
+    background-color: var(--grafica-gris);}
+
+
+#partido1 {
+    background-color: var(--grafica-amarillo);
+}
+
+#partido2 {
+    background-color: var(--grafica-lila2);
+}
+
+#partido3 {
+    background-color: var(--grafica-bordo);
+}
+
+#partido4 {
+    background-color: var(--grafica-celeste);
+}
+
+#partido5 {
+    background-color: var(--grafica-lila);
+}
+
+#partido6 {
+    background-color: var(--grafica-bordo);
+}
+
+#partido7 {
+    background-color: var(--grafica-verde);
+}
+
+#partido8 {
+    background-color: var(--grafica-gris);
+}
+
+
+/*Esta bien pero no ta bien*/
+
+.progress {
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #f0f0f0;
+    /* Color de fondo genérico */
+}
+
+.progress-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+    /* Color de la barra de progreso genérico */
+}
+
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textos);
+    font-size: 9px;
+}
+
+/* Estilos específicos para cada agrupación política */
+.partido1 .progress-bar {
+    background: var(--grafica-amarillo);
+}
+
+.partido2 .progress-bar {
+    background: var(--grafica-lila);
+}
+
+.partido3 .progress-bar {
+    background: var(--grafica-celeste);
+}
+
+.partido4 .progress-bar {
+    background: var(--grafica-bordo);
+}
+
+.partido5 .progress-bar {
+    background: var(--grafica-lila2);
+}
+
+.partido6 .progress-bar {
+    background: var(--grafica-bordo);
+}
+
+.texto-celeste {
+    color: var(--celeste);
+}
+
+.select {
+    /*cada uno de los select*/
+    background: transparent;
+    font-size: 14px;
+    padding: 5px;
+    border-style: hidden;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    color: var(--celeste);
+    max-width: 200px;
+}
+
+
+/*boton filtrar*/
+#filtrar {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-weight: bold;
+    width: 100px;
+    padding-top: 11px;
+    background-color: #FFF;
+    color: var(--textos);
+    cursor: pointer;
+
+}
+
+#filtrar i {
+    margin-right: 5px;
+}
+
+
+/*titulo de alerta manipulado desde js*/
+#titulo-mensaje {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--mensaje-usuario-amarillo);
+}
+
+#titulo-mensaje p {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
